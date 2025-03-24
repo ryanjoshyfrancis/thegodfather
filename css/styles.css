@@ -1,0 +1,310 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	font-size: 20px;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Oswald", sans-serif;
+}
+
+
+#carouselExampleIndicators1 img{
+	width: 100%;
+	height: auto;
+	
+}
+
+/*Footer Styles */
+footer {
+	width: 100%
+		
+}
+footer h2 {}
+.footerL {
+	float: left;
+	padding: 0;
+	border-right: 1px solid #999;
+}
+.footerR {
+	float: right;
+	text-align: right;
+	padding: 0;
+	
+	
+}
+
+.footerR p.linked{
+	background: url("../Images/linkedin.png")no-repeat right;
+	padding-left: 30px;
+}
+/*Navbar Styles */ 
+nav.navbar{
+	padding:20px;/*Creates space inside the navbar*/
+	background-color:#DBA213!important;
+	
+		
+	
+	
+}
+
+nav.navbar.navbar-nav{/*This  box contains all the link */
+	padding-top: 5px;
+	padding-left: 20px;
+	
+}
+nav.navbar.navbar-nav a.nav-link{ /* This target the liks*/
+	padding: 8px 20px; /* Sets the space around the link*/
+	color:#fff;/* Changes the color of the link*/
+	text-align: left;
+	font-size: 1rem;/* changes the font ofthe links*/
+
+}
+nav.navbar.navbar-nav a.nav-link:hover{ /* this create color on the targted link */
+	color:#e9bd23;
+}
+
+nav.navbar.navbar-nav.active a.nav-link{ /* this shows which page u are viewing*/
+	font-weight:bold;
+	color:#e9bd43;
+	background:transparent;
+	border-bottom: 4px solid #FFB800;
+}
+
+nav.navbar a.navbar-brand { /* targets the logo of your website*/
+	color: white;
+	
+}
+
+/*Link Styles*/
+a:link, a:active, a:visited {
+	color:#0088cc;
+	text-decoration:none;
+
+}
+a:hover{
+	text-decoration: underline;
+}
+
+/*Video Styles*/
+video{
+	width:100%;
+	height: auto;
+	margin-bottom: 1rem;
+}
+
+/* Post Comment form styles */
+#frmComment{
+	width: 90%;
+	margin:30px auto;
+	font-size: 0.9rem ;
+	
+}
+#frmComment label{
+	float: left;
+	width: 100%;
+	display: block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	
+}
+#frmComment label span {
+	float: left;
+	width: 30%;
+	text-align: right;
+	margin-top:10px;
+	padding-top: 20px;
+}
+#frmComment input{
+	float:left;
+	width: 50%;
+	border: 1px solid#999;
+	box-shadow: 0px 5px 5px #e3e3e3;
+	margin: 10px 0 0 20px;
+	padding: 20px 10px;
+	height: 18px;
+	
+
+}
+#frmComment input:hover, #frmComment textarea:hover{
+	box-shadow: 5px 5px 8px #c1c1c1;
+}
+#frmComment textarea{
+	float: left;
+	width:51%;
+	margin:8px 0 0 20px;
+	border: solid 1px #999;
+	box-shadow: 2px 8px 8px #e3e3e3;
+	padding: 10px 0 0 5px;
+}
+
+select{
+	width:50%;
+	padding:12px 10px 10px 10px;
+	margin:18px 0 0 20px;
+	border: 1px solid #999;
+	color:#999;
+	font-size: 16px;
+}
+#frmComment input[type=submit]{
+	padding: 12px 2px;
+	text-align: center;
+	width:140px;
+	float:left;
+	color:#fff;
+	background: #0088cc;
+	border: 1px solid #0088cc;
+	margin:0px 0 0 32%;
+	border-radius: 7px;
+	cursor: pointer;
+	height:45px;
+}
+
+#frmComment input[type=submit]:hover{
+	background: #18B1FB;
+	
+}
+/* table style*/
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	margin: 10px auto;
+}
+th{
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 10px 8px;
+	border-bottom: 2px solid #000;
+	text-align: center;
+}
+td{
+	font-size:0.9rem;
+	border-bottom: 1px solid #CCC;
+	padding: 12px 6px;
+	text-align: center;
+}
+table tr:nth-of-type(even){
+	background-color: rgba(219,162,19,1.00)
+}
+table tr:nth-of-type(even):hover{
+	background-color: rgba(219,162,19,1.00);
+	cursor:pointer;
+}
+table tr:nth-of-type(odd){
+	background-color: rgba(219,162,19,1.00);
+}
+table tr :nth-of-type(odd):hover{
+	background-color: rgba(172,31,34,1.00);
+	cursor: pointer;
+}
+
+@media screen and (max-width:992px){
+	
+	.footerL{
+		border-right:none;
+		border-bottom: 1px solid#999;
+		padding-left: 1rem;
+	}
+	.footerR{
+		text-align: left;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left: 1rem;
+	}
+	
+	.footerR p.linked{
+		background: url("../Images/linkedin.png")no-repeat 65px 0;
+		padding-right: 30px;
+	}
+
+form.form-inline{
+	width:100%
+		
+}
+
+form.form-inline input [type=search]{
+	width: 90%;
+}
+form.form-inline button[type=submit]{
+	display: none;
+	width: 0;
+	
+	
+}
+
+
+
+nav.navbar.navbar-nav{
+	padding-left:0;
+}
+nav.navbar.navbar.nav a.nav-link{
+	padding: 8px 20px 8px 0;
+	width: 50%;
+	
+	}
+p{
+	font-size: 0.85rem;
+}
+h2{
+	font-size:1.1rem;
+}
+	@media screen and (max-width: 768px){
+		table,thead,tbody,th,td,tr,caption{
+			display:block;
+		}
+	} 
+	thead tr {
+		display: none;
+		
+	} 
+	table tr:nth-of-type(even){
+		background-color: rgba(102,51,121,.25);
+		
+	}
+	table td{
+		border: none;
+		position: relative;
+		text-align: center;
+		font-size: 0.9rem;
+		border-bottom: 2px solid white;
+		
+	}
+	td:before{
+		position: absolute;
+		top: 12px;
+		left: 10px;
+	    width: 25% ;
+		font-weight: bold;
+		white-space: nowrap;
+		text-align: left;
+		font-size: 0.9rem;
+		
+		
+	}
+	td:nth-of-type(4) {
+		border-bottom: 4px solid white;
+	}
+	
+	/*label the data */
+	td:nth-of-type(1):before{
+		content:"Film:";
+			
+	}
+	td:nth-of-type(2):before{
+		content: "Date:";
+	}
+	td:nth-of-type(3):before{
+		content: "Time:";
+	}
+	td:nth-of-type(4):before{
+		content: "Venue:";
+	}
+
+}
+
+
+
+
